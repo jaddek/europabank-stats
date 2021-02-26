@@ -1,0 +1,23 @@
+{
+    "name": "jaddek/europabank-stats-http-client",
+    "description": "Http client for getting stats",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tony Nazarov",
+            "email": "tonynazarov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "ext-simplexml": "*",
+        "ext-json": "*",
+        "symfony/http-client": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaddek\\Europabank\\Stats\\": "src"
+        }
+    }
+}
