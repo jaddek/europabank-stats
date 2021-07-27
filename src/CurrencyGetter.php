@@ -11,10 +11,6 @@ final class CurrencyGetter
 {
     public static function getCurrencyRate(EurofxrefDailyDTO $eurofxrefDailyDTO, string $currency): RateDTO
     {
-        if ($currency === SupportedCurrenciesInterface::EUR) {
-            throw new \RuntimeException('There not reference to EUR-EUR rate. Maybe they are equal?');
-        }
-        
         $rate = $eurofxrefDailyDTO->getCurrencyRate($currency);
         
         if (!$rate instanceof RateDTO) {
