@@ -9,7 +9,7 @@ use Jaddek\Europabank\Stats\DTO\RateDTO;
 use Jaddek\Europabank\Stats\HttpClientInterface;
 use Jaddek\Europabank\Stats\SupportedCurrenciesInterface;
 
-final class EurofxrefDailyProvider
+class EurofxrefDailyProvider
 {
     private HttpClientInterface $client;
 
